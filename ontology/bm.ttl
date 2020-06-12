@@ -1,4 +1,4 @@
-@prefix : <https://bimerr.iot.linkeddata.es/def/bimerr-metadata#> .
+@prefix : <http://bimerr.iot.linkeddata.es/def/bimerr-metadata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,9 +6,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@base <https://bimerr.iot.linkeddata.es/def/bimerr-metadata> .
+@base <http://bimerr.iot.linkeddata.es/def/bimerr-metadata> .
 
-<https://bimerr.iot.linkeddata.es/def/bimerr-metadata> rdf:type owl:Ontology ;
+<http://bimerr.iot.linkeddata.es/def/bimerr-metadata> rdf:type owl:Ontology ;
                                                         <http://purl.org/dc/elements/1.1/created> "2020-05-28"@en ;
                                                         <http://purl.org/dc/elements/1.1/creator> "María Poveda-Villalón" ,
                                                                                                   "Serge Chávez-Feria" ;
@@ -65,52 +65,52 @@ skos:altLabel rdf:type owl:AnnotationProperty ;
               rdfs:comment "A set of related terms (e.g. synonyms) that can be alternatively used to represent the concept."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/bimerr-metadata#codeList
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#codeList
 :codeList rdf:type owl:AnnotationProperty ;
           rdfs:comment "A link to the code list that should be typically used for the data that refers to the specific concept."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/bimerr-metadata#codeType
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#codeType
 :codeType rdf:type owl:AnnotationProperty ;
           rdfs:comment "The type of code list that is applied for the specific concept."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/bimerr-metadata#deprecated
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#deprecated
 :deprecated rdf:type owl:AnnotationProperty ;
             rdfs:comment "The date when the specific concept became obsolete in the model."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/bimerr-metadata#isDefinedByStandard
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#isDefinedByStandard
 :isDefinedByStandard rdf:type owl:AnnotationProperty ;
                      rdfs:comment "A list of standards in which the specific concept is modeled, along with their complementary information, i.e. the exact concept used in such a standard, its type (e.g. element, attribute) and its use (required/optional) that applies for attributes."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/bimerr-metadata#measurementType
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#measurementType
 :measurementType rdf:type owl:AnnotationProperty ;
                  rdfs:comment "An indication of the measurement type that is applicable to a concept, e.g. referring to distance, temperature, etc."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/bimerr-metadata#measurementUnit
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#measurementUnit
 :measurementUnit rdf:type owl:AnnotationProperty ;
                  rdfs:comment "The baseline measurement unit for the specific concept and measurement type."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/bimerr-metadata#ordered
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#ordered
 :ordered rdf:type owl:AnnotationProperty ;
          rdfs:comment "An indication of whether ordering is needed for multiple appearances of the same concept."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/bimerr-metadata#sensitive
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#sensitive
 :sensitive rdf:type owl:AnnotationProperty ;
            rdfs:comment "An indication whether the specific concept models personal or sensitive data."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/bimerr-metadata#timeZone
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#timeZone
 :timeZone rdf:type owl:AnnotationProperty ;
           rdfs:comment "The timezone to which the data refer by default."@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/bimerr-metadata#transformation
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#transformation
 :transformation rdf:type owl:AnnotationProperty ;
                 rdfs:comment "Information for the transformation rules that are related to a specific applicable standard. It practically contains the function that is required for the transformation and the parameters / concepts that are involved."@en .
 

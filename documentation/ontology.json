@@ -49,7 +49,7 @@
     "@value" : "Used to define synonyms or related terms."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/created" : [ {
     "@language" : "en",
@@ -83,70 +83,70 @@
     "@value" : "0.0.1"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata#codeList",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata#codeList",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A link to the code list that should be typically used for the data that refers to the specific concept."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata#codeType",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata#codeType",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The type of code list that is applied for the specific concept."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata#deprecated",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata#deprecated",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The date when the specific concept became obsolete in the model."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata#isDefinedByStandard",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata#isDefinedByStandard",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A list of standards in which the specific concept is modeled, along with their complementary information, i.e. the exact concept used in such a standard, its type (e.g. element, attribute) and its use (required/optional) that applies for attributes."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata#measurementType",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata#measurementType",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An indication of the measurement type that is applicable to a concept, e.g. referring to distance, temperature, etc."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata#measurementUnit",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata#measurementUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The baseline measurement unit for the specific concept and measurement type."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata#ordered",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata#ordered",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An indication of whether ordering is needed for multiple appearances of the same concept."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata#sensitive",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata#sensitive",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An indication whether the specific concept models personal or sensitive data."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata#timeZone",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata#timeZone",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The timezone to which the data refer by default."
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/bimerr-metadata#transformation",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/bimerr-metadata#transformation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
