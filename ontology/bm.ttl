@@ -9,60 +9,23 @@
 @base <http://bimerr.iot.linkeddata.es/def/bimerr-metadata> .
 
 <http://bimerr.iot.linkeddata.es/def/bimerr-metadata> rdf:type owl:Ontology ;
-                                                        <http://purl.org/dc/elements/1.1/created> "2020-05-28"@en ;
-                                                        <http://purl.org/dc/elements/1.1/creator> "María Poveda-Villalón" ,
-                                                                                                  "Serge Chávez-Feria" ;
-                                                        <http://purl.org/dc/elements/1.1/description> "Ontology module that includes the medata and annotation terms needed in the BIMERR project."@en ;
-                                                        <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ;
-                                                        <http://purl.org/dc/elements/1.1/title> "BIMERR Metadata ontology"@en ;
-                                                        <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
-                                                        vann:preferredNamespacePrefix "bm"@en ;
-                                                        owl:versionInfo "0.0.1"@en .
+                                                       <http://purl.org/dc/elements/1.1/created> "2020-05-28"@en ;
+                                                       <http://purl.org/dc/elements/1.1/creator> "María Poveda-Villalón" ,
+                                                                                                 "Serge Chávez-Feria" ;
+                                                       <http://purl.org/dc/elements/1.1/description> "Ontology module that includes the medata and annotation terms needed in the BIMERR project."@en ;
+                                                       <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ;
+                                                       <http://purl.org/dc/elements/1.1/title> "BIMERR Metadata ontology"@en ;
+                                                       <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                                       vann:preferredNamespacePrefix "bm"@en ;
+                                                       owl:versionInfo "0.0.1"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  http://purl.org/dc/elements/1.1/created
-<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty ;
-                                          rdfs:comment "The date when the specific concept was added in the model."@en .
-
-
-###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/description
-<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/publisher
-<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2000/01/rdf-schema#comment
-rdfs:comment rdfs:comment "A brief overview that acts as an account of a concept’s contents."@en .
-
-
-###  http://www.w3.org/2002/07/owl#versionInfo
-owl:versionInfo rdfs:comment "The version of the model when the concept was last modified."@en .
-
-
-###  http://www.w3.org/2004/02/skos/core#altLabel
-skos:altLabel rdf:type owl:AnnotationProperty ;
-              rdfs:comment "A set of related terms (e.g. synonyms) that can be alternatively used to represent the concept."@en .
+###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#avoidElement
+:avoidElement rdf:type owl:AnnotationProperty ;
+              rdfs:comment "Used to indicate if an specific element needs to be avoided during the transformation from an ontology to a json data model."@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/bimerr-metadata#codeList
@@ -115,9 +78,46 @@ skos:altLabel rdf:type owl:AnnotationProperty ;
                 rdfs:comment "Information for the transformation rules that are related to a specific applicable standard. It practically contains the function that is required for the transformation and the parameters / concepts that are involved."@en .
 
 
-#################################################################
-#    Annotations
-#################################################################
+###  http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty ;
+                                          rdfs:comment "The date when the specific concept was added in the model."@en .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:comment "A brief overview that acts as an account of a concept’s contents."@en .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdfs:comment "The version of the model when the concept was last modified."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty ;
+              rdfs:comment "A set of related terms (e.g. synonyms) that can be alternatively used to represent the concept."@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
